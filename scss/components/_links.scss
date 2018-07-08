@@ -1,0 +1,142 @@
+.timeline {
+  border: 1px solid #fff;
+  z-index: 900;
+  position: fixed;
+  left: 20px;
+  top: 8vh;
+  right: 0;
+  bottom: 0;
+  height: 84vh;
+  width: 6px;
+  background: $color-secondary;
+
+  @media only screen and (max-width: 1000px) {
+    display: none;
+  }
+
+  @media only screen and (max-height: 700px) {
+    display: none;
+  }
+
+  .link_1991 {
+    @include timeline-links(6vh, '1991');
+    width: 30px;
+    height: 30px;
+    left: 8px;
+
+    &:hover {
+      background-color: $color-primary;
+    }
+
+    &:after {
+      left:32px;
+      font-size: 0.9rem;
+      top:-3px;
+    }
+
+  }
+
+  .link_1992-1996 {
+    @include timeline-links(11vh, '1992-1996');
+  }
+
+  .link_1997 {
+    @include timeline-links(16vh, '1997');
+  }
+
+  .link_1998 {
+    @include timeline-links(20vh, '1998');
+    width: 30px;
+    height: 30px;
+    left: 8px;
+    background-color: #913041;
+
+    &:hover {
+      background-color: #d94862;
+    }
+
+    &:after {
+      font-size: 1.4rem;
+      top: -7px;
+      left: 36px;
+      color: #fff;
+      text-shadow: none;
+    }
+
+  }
+
+  .link_1998-2000 {
+    @include timeline-links(25vh, '1998-2000');
+  }
+
+  .link_2001-2002 {
+    @include timeline-links(30vh, '2001-2002');
+  }
+
+  .link_2004 {
+    @include timeline-links(35vh, '2004');
+  }
+
+  .link_2006 {
+    @include timeline-links(40vh, '2006');
+  }
+
+  .link_2007 {
+    @include timeline-links(45vh, '2007');
+  }
+
+  .link_2008 {
+    @include timeline-links(50vh, '2008');
+  }
+
+  .link_2009-2010 {
+    @include timeline-links(55vh, '2009-2010');
+  }
+
+  .link_2011 {
+    @include timeline-links(60vh, '2011');
+  }
+
+  .link_2012 {
+    @include timeline-links(65vh, '2012');
+  }
+
+  .link_2013 {
+    @include timeline-links(70vh, '2013');
+  }
+
+  .link_2014 {
+    @include timeline-links(75vh, '2014-2015');
+  }
+
+  //.link_2015 {
+  //  @include timeline-links(76vh, '2015');
+  //}
+
+  .link_2016 {
+    @include timeline-links(80vh, '2016');
+  }
+
+  .link_2017 {
+    @include timeline-links(85vh, '2017');
+  }
+
+  .link_2018 {
+    @include timeline-links(90vh, '2018');
+    width: 30px;
+    height: 30px;
+    left: 8px;
+
+    &:hover {
+      background-color: $color-primary;
+    }
+
+    &:after {
+      left:32px;
+      font-size: 0.9rem;
+      top:-3px;
+    }
+
+  }
+}
+

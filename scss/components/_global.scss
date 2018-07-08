@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  font-family: $font-main;
+}
+
+.effect {
+  transform: scale(1.2);
+}

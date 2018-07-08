@@ -1,0 +1,84 @@
+/* ---------------------------------------- */
+/* page 1 */
+/* ---------------------------------------- */
+
+@mixin P1-content-media-width ($align, $width, $margin...) {
+  align-self: $align;
+  margin: $margin;
+  width: $width;
+  @content
+}
+
+@mixin P1-content-media-height ($align, $margin...) {
+  align-self: $align;
+  margin: $margin;
+  @content
+}
+
+@mixin P1-img-media-w-h($width, $height) {
+  width: $width;
+  height: $height;
+  @content
+
+}
+
+/* ---------------------------------------- */
+/* other pages */
+/* ---------------------------------------- */
+
+@mixin PAGES-content-media($width, $padding) {
+  width: $width;
+  padding: $padding;
+  @content
+}
+
+@mixin PAGES-date-media($padding, $margin...) {
+  padding: $padding;
+  margin: $margin;
+  @content
+}
+
+/* ---------------------------------------- */
+/* timeline / links */
+/* ---------------------------------------- */
+
+@mixin timeline-links ($top, $date) {
+  display: inline-block;
+  z-index: 999;
+  position: fixed;
+  left: 13px;
+  top: $top;
+  right: 0;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background-color: $color-secondary;
+  transition: 0.5s all;
+
+  &:hover {
+    background-color: $color-primary;
+    transform: scale(1.1);
+  }
+
+  &:after {
+    border-radius: 10px;
+    content: $date;
+    position: absolute;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: $color-secondary;
+    top: -6px;
+    left: 22px;
+    font-size: 0.8rem;
+    padding: 5px;
+    border: 2px solid #fff;
+    background-color: rgba(0, 162, 217, .8);
+    width: max-content;
+    text-shadow: 0 0 20px rgba(255,255,255,255.1);
+
+  }
+
+}
